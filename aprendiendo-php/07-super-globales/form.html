@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <title>Formulario get y post</title>
+    <meta charset="utf-8" />
+    <meta keywords="get, post" />
+</head>
+<!--Los parametros get se envian por medio de la url de la siguiente manera:
+name=value&lastname=value&...
+-->
+
+<body>
+    <h1>Mi formulario en php</h1>
+    <!--Aqui en el form detallamos el method que es para definir que es lo que queremos hacer con el form
+        en este caso recoger los datos de este form y el action que es a donde vamos a mandar esos datos-->
+    <h2>Por GET</h2>
+        <form method="GET" action="recibirGET.php">
+        <p>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" placeholder="Escribe tu nombre" />
+            <br>
+            <label for="last-name">Apellido</label>
+            <input type="text" name="last-name" placeholder="Escribe tu apellido aquí" />
+            <br>
+            <input type="submit" value="Submit"/>
+        </p>
+
+    </form>
+    <!--Aqui en el form post buscamos que los datos se envien de la manera oculta más posible,
+    cosa que no se logra cuando lo hacemos por el metodo get ya que se muestran los datos en el campo de la url-->
+    <h2>Por POST</h2>
+    <form method="POST" action="recibirPOST.php">
+        <p>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" placeholder="Escribe tu nombre" />
+            <br>
+            <label for="last-name">Apellido</label>
+            <input type="text" name="last-name" placeholder="Escribe tu apellido aquí" />
+            <br>
+            <input type="submit" value="Submit"/>
+        </p>
+
+    </form>
+</body>
+
+</html>
