@@ -1,12 +1,12 @@
-<?php 
+<?php
 
 /*
-    *Funciones para arrays
-*/
+ *Funciones para arrays
+ */
 
-                                        //ORDENAMIENTO
+//ORDENAMIENTO
 
-$cantantes = array('2pac','Drake','Jennifer Lopez','Alfredo');
+$cantantes = array('2pac', 'Drake', 'Jennifer Lopez', 'Alfredo');
 
 //Ordena por orden alfabetico los elementos del array
 asort($cantantes);
@@ -26,12 +26,12 @@ sort($cantantes);
 var_dump($cantantes);
 
 
-                                        //AÑADIR Y ELIMINAR ELEMENTOS A UN ARRAY
+//AÑADIR Y ELIMINAR ELEMENTOS A UN ARRAY
 $cantantes[] = 'Natti Natasha';
 var_dump($cantantes);
 
 //array_push() and array_pop (añadir y eliminar el ultimo elemento en el arreglo)
-array_push($cantantes,'Mora');
+array_push($cantantes, 'Mora');
 var_dump($cantantes);
 
 array_pop($cantantes);
@@ -44,5 +44,21 @@ unset($cantantes[1]);
 var_dump($cantantes);
 
 //seleccionar un elemento aleatorio de un array
-echo array_rand($cantantes); 
+$rand_num = array_rand($cantantes);
+echo $cantantes[$rand_num];
+
+
+//Dar la vuelta en un array
+$cantantes=array_reverse($cantantes);
+var_dump($cantantes);
+
+
+//Buscar dentro de un array
+var_dump(array_search('Drake',$cantantes));
+
+//contar elementos del array
+
+var_dump(count($cantantes));
+
+var_dump(sizeof($cantantes));
 ?>
