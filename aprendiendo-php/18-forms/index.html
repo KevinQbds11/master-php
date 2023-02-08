@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-co">
+
+<head>
+    <title>Forms with php and html</title>
+    <meta charset="utf-8">
+    <meta name="keywords" value="forms">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <header>
+        <h1>FORMULARIO HTML</h1>
+    </header>
+    <main>
+        <article class="form">
+
+            <form action="guardar.php" method="POST" enctype="multipart/form-data">
+
+                <label for="name">Nombre: </label>
+                <p><input type="text" name="name" autofocus="autofocus" placeholder="Tu nombre"></p>
+
+                <label for="last-name">Apellido: </label>
+                <p><input type="text" name="last-name"></p>
+
+                <label for="cc">Cedula: </label>
+                <p><input type="number" name="cc"></p>
+
+                <label for="sex">Tu Sexo: </label>
+                <p><select name="sex">
+
+                        <option value="man">Hombre</option>
+                        <option value="woman">Mujer</option>
+
+                    </select></p>
+
+                <label for="preferences">Tus preferencias: </label>
+                <p>
+                    Juegos <input type="checkbox" name="preferences" value="juegos">
+                    Estudio <input type="checkbox" name="preferences" value="estudio">
+                </p>
+
+                <label for="birth-date">Fecha de Nacimiento: </label>
+                <p>
+                    <input type="date" name="birth-date">
+                </p>
+
+                <!--<label for="file">Archivo: </label>
+                <p>
+                    <input type="file" name="file" multiple="multiple">
+                </p>
+
+                <label for="git">Git: </label>
+                <p>
+                    <input type="url" name="git">
+                </p>
+
+                <label for="cookie">Cookies: </label>
+                <p>
+                    Yes: <input type="radio" name="cookie" value="yes">
+                    No: <input type="radio" name="cookie" value="no">
+                </p>-->
+
+                <p><input type="submit" value="Enviar"></p>
+
+            </form>
+
+        </article>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
