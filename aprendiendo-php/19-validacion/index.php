@@ -19,10 +19,10 @@
     ?>
     <form action="procesar_formulario.php" method="POST">
         <label for="name">Nombre(s): </label>
-        <p><input type="text" name="name" autofocus="autofocus" required="required" pattern="[A-Za-z]+"></p>
+        <p><input type="text" name="name" autofocus="autofocus" required="required" pattern="[A-Za-z ]+"></p>
 
         <label for="last-name">Apellidos: </label>
-        <p><input type="text" name="last-name" required="required" pattern="[A-Za-z]+"></p>
+        <p><input type="text" name="last-name" required="required" pattern="[A-Za-z ]+"></p>
 
         <label for="age">Edad: </label>
         <p><input type="number" name="age" required="required" pattern="[0-9]+"></p>
